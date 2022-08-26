@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="vendor/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/fontawesome/css/all.min.css" rel="stylesheet">
+  <script src="vendor/js/bootstrap.bundle.min.js"></script> 
+  <script src="vendor/fontawesome/js/all.min.js"></script>
+  <link rel="stylesheet" href="css/style form.css">
+    <title>Formulaire</title>
+</head>
+<body>
+    <div class="container">
+      <div class="divider"></div>
+        <div class="heading">
+          <h2>Pré-inscrivez-vous</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <form action="" id="ins-form" method="post" role="form">
+              <div class="row">
+
+                <div class="col-md-6">
+                  <label for="nom" id="name">Nom <span class="blue"> *</span></label>
+                  <input type="text"  id="name" name="nom" class="form-control" placeholder="Votre Nom" required>
+                 
+                </div>
+
+                <div class="col-md-6">
+                  <label for="prénom" id="first-name">Prénom <span class="blue"> *</span></label>
+                  <input type="text" name="prénom" class="form-control" placeholder="Votre prénom" required>
+                 
+                </div>
+
+                <div class="col-md-6">
+                  <label for="date" id="date">Date de naissance <span class="blue"> *</span></label>
+                  <input type="date" id="date" name="date" class="form-control" required>
+                
+                </div>
+
+                <div class="col-md-6">
+                  <label for="lieu" id="lieu">Lieu de naissance <span class="blue"> *</span></label>
+                  <input type="text" id="lieu" name="lieu" class="form-control" placeholder="Votre Lieu de naissance" required>
+                 
+                </div>
+
+                <div class="col-md-6">
+                  <label class="container">M
+                    <input type="radio" value="Masculin" required name="sexe" id="sexe">
+                    <span class="checkmark"></span>
+                  </label>
+                  
+                  <label class="container">F
+                    <input type="radio" value="Féminin" required name="sexe" id="sexe">
+                    <span class="checkmark"></span>
+                  </label>
+                 
+                </div>
+
+                <div class="col-md-6">
+                  <label for="phone" id="phone">Téléphone</label>
+                  <input type="number"id="phone" name="phone" class="form-control" placeholder="Votre numéro de téléphone" >
+                
+                </div>
+                <div class="col-md-6">
+                  <label for="pays" id="pays">Pays</label>
+                  <input type="text" id="pays" name="pays" class="form-control" placeholder="Votre Pays d'origine">
+                  
+                </div>
+
+                <div class="col-md-6">
+                  <label for="email" id="email">Email <span class="blue"> *</span></label>
+                  <input type="email" id="email" name="email" class="form-control" placeholder="Votre email" required>
+               
+                </div>
+
+                <div class="col-md-6">
+                  <label for="Niveau" id="Niveau">Niveau d'étude <span class="blue"> *</span></label>
+                  <input type="text" id="niveau" name="Niveau" class="form-control" placeholder="Votre niveau d'étudde" required>
+                
+                </div>
+
+                <div class="col-md-6">
+                  <label for="formation" id="formation"> Formation désirée<span class="blue"> *</span></label>
+                  <select name="formation" id="" style="background: #cc0808b7;" required>
+                    <option value=""></option>
+                    <option value="Secrétariat bureautique(SB">Secrétariat bureautique(SB) </option>
+                    <option value="Secrétariat de Direction(SD)">Secrétariat de Direction(SD) </option>
+                    <option value="Comptabilité informatisée de gestion(CIG)">Comptabilité informatisée de gestion(CIG) </option>
+                    <option value="Graphisme de production (GP)">Graphisme de production (GP) </option>
+                    <option value="Maintenance Informatique(MI)">Maintenance Informatique(MI) </option>
+                    <option value="Maintenance des réseaux informatique(MRI) ">Maintenance des réseaux informatique(MRI) </option>
+                    <option value="Developpement d'applications(Génie Logiciel)">Developpement d'applications(Génie Logiciel) </option>
+                    <option value="web Developpeur/WebMaster">web Developpeur/WebMaster</option>
+                  </select>
+                  
+                </div>
+                <div class="col-md-12">
+                     <p class="blue"> <strong>*Ces informations sont requises</strong> </p>
+                </div>
+                <div class="col-md-12">
+                     <input type="submit" class="button1" value="Valider">
+                </div>
+              </div>
+
+            </form>
+
+          </div>
+        </div>
+      </div> 
+</body>
+</html>
