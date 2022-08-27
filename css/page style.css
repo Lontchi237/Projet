@@ -73,9 +73,12 @@ h2{
 
 
 
+/***********************footer***********************/
 
+#ima{
+    height: 100px;
 
-
+}
 #contact h2{
     color: red;
     font-size: 20px;
