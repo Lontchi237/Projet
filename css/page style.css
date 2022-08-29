@@ -5,7 +5,6 @@
 }
 body{
     font-family: "lato" , sans-serif;
-    margin: 70px 0px;
     background: #cc0808b7;
 }
 .heading{
@@ -19,12 +18,14 @@ h2{
     color: white;
     font-size: 25px;
 }
+/* /* nav bar ****************************** */
 #btn{
     color: white;
     margin-top: 5px;
     border-radius: 20px;
     background: rgba(255, 0, 0, 0.856);
     transition: all .4s ease-in;
+    margin-bottom: 5px;
 }
 #btn:hover{
     color: black;
@@ -32,18 +33,18 @@ h2{
     background: rgba(252, 4, 4, 0.39);
 }
 .topnav {
-    position: absolute;
     background-color: white;
     overflow: hidden;
     position: fixed;
-    z-index: 10000;
+    position: absolute;
     width: 100%;
-    height: 70px;
-    margin-top: -200px;
+    z-index: 22323232;
+    top: 0;
+    
     
 }
 .topnav a {
-    
+    display: block;
     float: right;
     color: black;
     text-align: center;
@@ -51,20 +52,18 @@ h2{
     text-decoration: none;
     font-size: 17px;
     font-weight: 700;
-    margin-right: 30px;
+    margin-right: 15px;
     transition: all .2s ease-in;
     margin-top: 5px;
 
 }
 .topnav a:hover {
     color: rgb(255, 0, 0);
-    font-weight: bold;
-}
-#im{
+    font-weight: bold;}
+    .topnav .icon {
+        display: none;
+    }
     
-}
-
-
 
 
 
@@ -97,10 +96,32 @@ h2{
 }
 
 
-/* Responsive ******************************************/
-   @media screen and (max-width: 500px) {
-    
-.topnav a{
-    margin-right: 0px;
-}
+@media screen and (max-width: 600px) {
+    .topnav a {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+    .topnav{
+        z-index: 10000;
+        top: 0;
+    }
+
    }
+   @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    #btn{
+        margin-left: 30px;
+    }
+    
+    .topnav.responsive a {
+      float: none;
+      display: block;
+    }
+   
+    }
