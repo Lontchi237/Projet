@@ -53,7 +53,7 @@ h2{
     transition: all .3s ease-in;
 }
 .button1:hover{
-    background: rgba(255, 0, 0, 0.897);
+    background:#ffa600b2;
     border-color: #ffa500;
 }
 label{
