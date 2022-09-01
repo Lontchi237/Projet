@@ -1,18 +1,12 @@
 
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+ 
 }
 body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     background: linear-gradient(to left  bottom,aqua, rgba(255, 0, 0, 0.808) );
 }
 header{
     height: 140vh;
-    overflow: hidden;
     position: relative;
     background: linear-gradient(to left bottom, rgba(255, 0, 0, 0.281), rgba(0, 38, 255, 0.267)) , url(Best\ Cyber\ Monday\ Tablet\ deals\ 2021\ —\ what’s\ still\ available.jfif);
     background-size: cover;
@@ -29,9 +23,10 @@ header h1{
     position: absolute;
     top: 200px;
     left: 40px;
-    z-index: 334;
+    z-index: 0;
 }
 header h2{
+    text-align: center;
     justify-content: center;
     font-weight: 300;
     font-size: 50px;
@@ -40,7 +35,7 @@ header h2{
     position: absolute;
     top: 500px;
     left: 60px;
-    z-index: 334;
+    z-index: 0;
     font-size: 30px;
 }
 
@@ -80,6 +75,7 @@ h5{
     border-radius: 20px;
     background: rgba(255, 0, 0, 0.856);
     transition: all .4s ease-in;
+    margin-bottom: 5px;
 }
 #btn:hover{
     color: black;
@@ -87,17 +83,15 @@ h5{
     background: rgba(252, 4, 4, 0.39);
 }
 .topnav {
-    position: absolute;
     background-color: white;
-    overflow: hidden;
     position: fixed;
-    z-index: 10000;
     width: 100%;
-    height: 70px;
+    z-index: 22323232;
+    
     
 }
 .topnav a {
-    
+    display: block;
     float: right;
     color: black;
     text-align: center;
@@ -113,8 +107,17 @@ h5{
 .topnav a:hover {
     color: rgb(255, 0, 0);
     font-weight: bold;
-/* footer ************************************************/
+
 }
+.topnav .icon {
+    display: none;
+}
+
+
+
+/* footer ************************************************/
+
+
 #contact h2{
     color: red;
     font-size: 20px;
@@ -137,13 +140,42 @@ h5{
 
 
 /* Responsive ******************************************/
-   @media screen and (max-width: 500px) {
-    
-.topnav a{
-    margin-right: 0px;
-    
-}
-header h1{
-    margin-top: -100px;
+   @media screen and (max-width: 600px) {
+    .topnav a {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+    .topnav{
+        z-index: 10000;
+    }
+
    }
+   @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    #btn{
+        margin-left: 30px;
+    }
+    
+    .topnav.responsive a {
+      float: none;
+      display: block;
+    }
+    /*************************dddddddddddddddddddddddddddd*************************/
+    header h1{
+        top: 100px;
+    }
+    header h2{
+        top: 400px;
+        text-align: center;
+        margin: auto;
+        left: 20px;
+        right: 20px;
+    }
+    
    }
